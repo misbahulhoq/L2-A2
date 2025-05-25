@@ -72,8 +72,16 @@ FROM rangers JOIN sightings on rangers.ranger_id=sightings.ranger_id GROUP BY NA
 SELECT common_name FROM
 species WHERE species_id NOT IN (SELECT species_id from sightings);
 
-
 -- Problem 6
+SELECT common_name, sighting_time, name from rangers JOIN (SELECT species.common_name, sighting_time, ranger_id from species JOIN (SELECT species_id, ranger_id, sighting_time from sightings  ORDER BY sighting_time DESC LIMIT 2) as sightings_table ON 
+species.species_id=sightings_table.species_id) as sighting_table_two ON rangers.ranger_id=sighting_table_two.ranger_id;
+
 -- Problem 7
+
+
+
 -- Problem 8
+
+
+
 -- Problem 9
