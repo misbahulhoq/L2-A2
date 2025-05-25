@@ -77,7 +77,7 @@ SELECT common_name, sighting_time, name from rangers JOIN (SELECT species.common
 species.species_id=sightings_table.species_id) as sighting_table_two ON rangers.ranger_id=sighting_table_two.ranger_id;
 
 -- Problem 7
-
+UPDATE species SET conservation_status='Historic' WHERE discovery_date < '1800-01-01';
 
 
 -- Problem 8
