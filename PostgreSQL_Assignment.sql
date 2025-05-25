@@ -69,6 +69,9 @@ FROM rangers JOIN sightings on rangers.ranger_id=sightings.ranger_id GROUP BY NA
 
  
 -- Problem 5
+SELECT common_name FROM
+species WHERE species_id NOT IN (SELECT species_id from sightings);
+
 
 -- Problem 6
 -- Problem 7
