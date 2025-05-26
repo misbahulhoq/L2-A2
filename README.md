@@ -42,7 +42,7 @@ CREATE TABLE enrollments (
 
 এখানে enrollments টেবিলের student_id কলামটি students টেবিলের student_id কলামটির সাথে সংযোগ স্থাপন করছে । পরবর্তীতে তথ্য খুঁজে বের করার সময় রিলেশন থাকার কারণে তথ্য খুঁজে বের করা সহজ হবে ।
 
-### What is the difference between the VARCHAR and CHAR data types?
+# What is the difference between the VARCHAR and CHAR data types?
 
 CHAR এবং VARCHAR ডেটা টাইপ দুইটি টেক্সট সংরক্ষণের জন্য ব্যবহৃত হয়ে থাকে কিন্তু তাদের বেশ কিছু পার্থক্য রয়েছে যেমন:
 
