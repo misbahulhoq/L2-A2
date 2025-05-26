@@ -90,6 +90,7 @@ CASE
 END as time_of_day
 from sightings; 
 
-SELECT * from sightings WHERE sighting_time::TIME = '07:45:00';
-
 -- Problem 9
+DELETE FROM rangers where ranger_id NOT IN (SELECT ranger_id from sightings);
+
+SELECT ranger_id from sightings
