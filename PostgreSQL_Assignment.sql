@@ -93,4 +93,3 @@ from sightings;
 -- Problem 9
 DELETE FROM rangers where ranger_id NOT IN (SELECT ranger_id from sightings);
 
-SELECT ranger_id from sightings
